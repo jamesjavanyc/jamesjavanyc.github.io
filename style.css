@@ -62,6 +62,10 @@ main{
 #assignment-head{
     border-bottom:1px solid gray;
     margin-bottom:1em;
+    font-family: var(--head-font);
+}
+#assignment-list{
+    font-family: var(--content-font);
 }
 
 /* ---------------------------------------- footer section --------------------------------------- */
