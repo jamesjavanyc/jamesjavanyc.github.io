@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD230</title>
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/602/230/png-clipart-deidara-akatsuki-amazon-com-naruto-madara-uchiha-naruto-logo-cloud-logo.png">
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/small.css">
+    <link rel="stylesheet" type="text/css" href="./styles/medium.css">
 </head>
 <body>
     <header>
-        <div id="header-name">
-            <h2>Junzhou Liu</h2>
-        </div>
-        <div id="header-photo">
-            <img src="source/selfie.jpg"  alt="my-photo" />
+        <div id='header-info'>
+            <div id="header-photo">
+                <img src="source/selfie.jpg"  alt="my-photo" />
+            </div>
+            <div id="header-name">
+                <h2>Junzhou Liu</h2>
+            </div>
         </div>
     </header>
     <main>
@@ -34,12 +38,13 @@
         </div>
     </main>
     <footer>
-        <div>
+        <div id="copy-info">
             <p id="copyright">&copy2020&nbsp|&nbspJunzhou Liu&nbsp|&nbspNew York&nbsp|&nbsp<a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
             <p id="footer-last-update"></p>
         </div>
     </footer>
     <!-- javascript -->
-    <script type="module" src="init.js"></script> 
+    <!-- initialize data -->
+    <script type="module" src="./javascript/init.js"></script> 
 </body>
 </html>

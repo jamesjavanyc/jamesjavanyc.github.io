@@ -6,3 +6,5 @@ initdata.push(setLastUpdate);
 initdata.forEach(function (callback){
     callback();
 });
+
+console.log(document.body.clientWidth/16);

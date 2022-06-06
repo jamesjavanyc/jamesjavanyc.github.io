@@ -6,99 +6,77 @@
     --head-font:Kdam;
     --content-font:Roboto;
 }
-/* ---------------------------------------- init --------------------------------------- */
+/* ---------------------------------------- clear default value --------------------------------------- */
 * {
     margin: 0;
     padding: 0;
 }
 body{
-    min-width: 1440px;
+    height: 100%;
 }
 
 /* ---------------------------------------- header section --------------------------------------- */
 header{
-    position:relative;
     margin:15% auto 0;
-    max-width: 40%;
 }
-#header-name{
-    display:grid;
-    grid-template-columns: 2fr 1fr;
+#header-info{
     background-color: var(--w1-bg-color);
-    margin:0 auto;
-    border-radius: 1em;
 }
 #header-name h2{
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
     font-family: var(--head-font);
-    line-height: 2em;
-}
-#header-photo{
-    position:absolute;
-    right: 5%;
-    top: 40%;
+    line-height: 4rem;
 }
 #header-photo img{
-    width: 8em;
-    height:12em;
+    display: block;
+    margin:auto;
+    width: 10rem;
+    height:15rem;
 }
 
 /* ---------------------------------------- main section --------------------------------------- */
 /* main section */
 main{
-    margin:2em auto;
+    margin:2rem auto;
 }
 #main-section{
     margin:0 auto;
-    display:grid;
-    max-width: 40%;
+    border-radius: 0.5rem;
 }
 #assignment{
-    background-color:white;
-    border-radius: 0.5em;
-    padding:0 2em;
+    padding:0 3rem;
 }
 #assignment-head{
     border-bottom:1px solid gray;
-    margin-bottom:1em;
+    margin-bottom:1rem;
     font-family: var(--head-font);
 }
 #assignment-list{
     font-family: var(--content-font);
+    line-height:1.5rem;
 }
 
 /* ---------------------------------------- footer section --------------------------------------- */
-footer{
-    margin:2em auto;
-    max-width: 40%;
-}
-footer div{
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
+#copy-info{
     background-color: var(--w1-bg-color);
     margin:0 auto;
-    padding: 0.5em;
-    border-radius: 1em;
+    padding: 0.5rem;
 }
 #copyright{
-    grid-row: 1/2;
-    grid-column: 1/2;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     font-family:var(--content-font);
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 #footer-last-update{
-    grid-row:2/3;
-    grid-column: 1/2;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     font-family: var(--content-font);
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
