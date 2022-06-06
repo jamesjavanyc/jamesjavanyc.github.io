@@ -17,7 +17,7 @@ const formatDateTime = (date) => {
         minute = minute < 10 ? ('0' + minute) : minute;  
     var second=date.getSeconds();  
         second=second < 10 ? ('0' + second) : second;  
-    return m+'/'+d+"/"+'y'+ '\t'+h+':'+minute+':'+second;   
+    return m+'/'+d+"/"+y+ '\t'+h+':'+minute+':'+second;   
 }
 
 export {setLastUpdate};
