@@ -3,6 +3,7 @@ const setLastUpdate =() =>{
     let lastUpdate = document.getElementById('footer-last-update');
     let modifyDate= formatDateTime(new Date(document.lastModified));
     lastUpdate.innerText = 'Last Update : ' + modifyDate;
+    console.log('last update modified!')
 }
 const formatDateTime = (date) => {
     var y = date.getFullYear(); 
