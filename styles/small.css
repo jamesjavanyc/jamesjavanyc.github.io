@@ -80,3 +80,6 @@ main{
     font-family: var(--content-font);
     line-height: 1.5rem;
 }
+a{
+    color:black;
+}

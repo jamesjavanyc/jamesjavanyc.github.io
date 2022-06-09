@@ -1,0 +1,88 @@
+@import url(small.css);
+@import url(medium.css);
+@import url(large.css);
+/* common css */
+:root{
+    --w1-bg-color: rgb(8,32,49);
+    --title-font:Joan;
+    --head-font:Kdam;
+    --content-font:Roboto;
+}
+*{
+    margin:none;
+    padding:none;
+}
+body{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+#header-div{
+    background-color: var(--w1-bg-color);
+    margin: 0 auto;
+    width: 100%;
+    height: 6.2rem;
+    border-radius: 10px;
+}
+#header-div > p{
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    font-weight:600;
+    text-align: center;
+    font-family: var(--content-font);
+    line-height: 2rem;
+}
+h2{
+    margin: 0 auto;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: var(--head-font);
+    line-height: 4rem;
+}
+
+ul{
+    list-style-type:none;
+    display:grid;
+    grid-template-columns:repeat(3,1fr)
+}
+li{
+    list-style-type:none;
+    padding: 5%;
+}
+.principle{
+    width: 100%;
+}
+img{
+    width:100%;
+}
+
+/* ---------------------------------------- footer section --------------------------------------- */
+
+#copy-info{
+    background-color: var(--w1-bg-color);
+    border-radius: 10px;
+    margin:0 auto;
+    padding: 0.5rem;
+}
+#copyright{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    font-family:var(--content-font);
+    line-height: 1.5rem;
+}
+#footer-last-update{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--content-font);
+    line-height: 1.5rem;
+}
+a{
+    color: white;
+}
