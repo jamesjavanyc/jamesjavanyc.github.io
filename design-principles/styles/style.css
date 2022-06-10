@@ -1,27 +1,24 @@
-@import url(small.css);
-@import url(medium.css);
-@import url(large.css);
+@import "small.css";
+@import "medium.css";
+@import "large.css";
 /* common css */
 :root{
     --w1-bg-color: rgb(8,32,49);
     --title-font:Joan;
     --head-font:Kdam;
     --content-font:Roboto;
+    --p-t-bgc:rgb(52,73,87);
 }
 *{
     margin:none;
     padding:none;
 }
-body{
-    max-width: 80rem;
-    margin: 0 auto;
-}
+
 #header-div{
     background-color: var(--w1-bg-color);
     margin: 0 auto;
     width: 100%;
     height: 6.2rem;
-    border-radius: 10px;
 }
 #header-div > p{
     margin: 0 auto;
@@ -41,27 +38,46 @@ h2{
     line-height: 4rem;
 }
 
-ul{
-    list-style-type:none;
-    display:grid;
-    grid-template-columns:repeat(3,1fr)
-}
+
+/* -------------------------------------------list------------ */
+
 li{
+    padding:none;
     list-style-type:none;
     padding: 5%;
 }
 .principle{
+    border: 1px solid black;
+    border-radius: 12px;
     width: 100%;
 }
+.t-box{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--p-t-bgc);
+}
+h3{
+    margin: 0 auto;
+    line-height:3rem;
+    font-size:2rem;
+    text-align: center;
+    color: white;
+}
+.principle > a, p{
+    margin:2px auto;
+    color:var(--p-t-bgc);
+    text-align: center;
+}
 img{
-    width:100%;
+    border: 1px solid gray;
+    margin: 2%;
+    width: 96%;
 }
 
 /* ---------------------------------------- footer section --------------------------------------- */
 
 #copy-info{
     background-color: var(--w1-bg-color);
-    border-radius: 10px;
     margin:0 auto;
     padding: 0.5rem;
 }
