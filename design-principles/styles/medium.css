@@ -7,7 +7,6 @@
         list-style-type:none;
         display:grid;
         grid-template-columns:repeat(2,1fr);
-        min-width: none;
         padding:0;
     }
 }

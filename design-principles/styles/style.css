@@ -10,8 +10,8 @@
     --p-t-bgc:rgb(52,73,87);
 }
 *{
-    margin:none;
-    padding:none;
+    margin: 0;
+    padding: 0 ;
 }
 
 #header-div{
@@ -42,7 +42,7 @@ h2{
 /* -------------------------------------------list------------ */
 
 li{
-    padding:none;
+    padding: 0;
     list-style-type:none;
     padding: 5%;
 }
