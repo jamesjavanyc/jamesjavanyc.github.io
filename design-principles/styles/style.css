@@ -1,6 +1,7 @@
 @import "small.css";
 @import "medium.css";
 @import "large.css";
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Kdam+Thmor+Pro&family=Roboto:ital,wght@1,100&display=swap');
 /* common css */
 :root{
     --w1-bg-color: rgb(8,32,49);
