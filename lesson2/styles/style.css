@@ -32,7 +32,7 @@ ul li a:hover{
 }
 ul li a{
     border: 10px solid #36454f;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 li{
@@ -118,7 +118,7 @@ main{
     }
     ul li a{
         border: 10px solid #36454f;
-        color: black;
+        color: white;
         text-decoration: none;
     }
     li{
