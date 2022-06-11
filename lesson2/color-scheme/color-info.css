@@ -1,0 +1,20 @@
+@import url(../styles/style.css);
+#color-display1{
+    background-color: rgb(8,32,49);
+    height: 2rem;
+    width: 15rem;
+}
+#color-display2{
+    background-color: rgb(52,73,87);
+    height: 2rem;
+    width: 15rem;
+}
+#color-display3{
+    background-color: rgb(255,255,255);
+    border: 1px solid black;
+    height: 2rem;
+    width: 15rem;
+}
+.color-info{
+    font-family:var(--content-font);
+}

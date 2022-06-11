@@ -1,0 +1,10 @@
+@import url(../styles/style.css);
+#font-display1{
+    font-family:var(--title-font);
+}
+#font-display2{
+    font-family:var(--head-font);
+}
+#font-display3{
+    font-family:var(--content-font);
+}
