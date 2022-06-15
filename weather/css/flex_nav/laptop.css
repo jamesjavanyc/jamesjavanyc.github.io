@@ -1,0 +1,21 @@
+/* laptop */
+@media only screen and (min-width:32.5rem){
+    nav{
+        padding:1.2rem;
+    }
+    nav div{
+        display:none;
+    }
+    ul{
+        width:100%;
+        display:flex;  
+        flex-wrap: nowrap; 
+        overflow: hidden;
+    }
+    li{
+        padding: 0 20px;
+        margin:0.3rem auto;
+        white-space:nowrap;
+        text-overflow: clip;
+    }
+}
