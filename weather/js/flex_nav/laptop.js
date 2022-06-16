@@ -19,6 +19,7 @@ const laptopNavSwitch = ()=>{
             if (window.innerWidth<1160){
                 this.lp_switch.setAttribute('style', 'display:inline-block;');
                 this.lp_switch.setAttribute('style', 'float:right;');
+                this.lp_switch.children[0].src='./images/right-open-menu.png';
             }else{
                 this.lp_switch.setAttribute('style', 'display:none;');
             }
