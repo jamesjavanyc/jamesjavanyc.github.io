@@ -1,0 +1,1 @@
+// clean attribute from nav

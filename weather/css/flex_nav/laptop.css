@@ -11,11 +11,28 @@
         display:flex;  
         flex-wrap: nowrap; 
         overflow: hidden;
+        z-index:0;
+        position:relative;
     }
     li{
         padding: 0 20px;
         margin:0.3rem auto;
         white-space:nowrap;
         text-overflow: clip;
+    }
+    #laptop_switch{
+        /* margin-top: -22px; */
+        display:inline-block;
+        position:absolute;
+        right: -1%;
+        height:1.5rem;
+        width: 4rem;
+        z-index:1;
+        background-color:var(--nav-color);
+    }
+    #laptop_switch img{
+        float:left;
+        height:1.5rem;
+        background-color:var(--nav-color);
     }
 }

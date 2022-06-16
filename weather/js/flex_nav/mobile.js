@@ -14,15 +14,10 @@ const mobileNavSwitch = ()=>{
             Array.from(this.nav_list.children).forEach(function(item){
                 item.setAttribute('style','margin: 1rem auto 0;');
             });
-            // console.log('switch body:');
-            // console.log(this.body);
-            // console.log('switch nav:');
-            // console.log(this.nav_list);
+            document.getElementById('laptop_switch').setAttribute('style', 'display:none;');
             this.image= this.body.childNodes[1];
             this.title= this.body.childNodes[2];
             this.title = document.getElementById("mobile_nav_title");
-            // console.log(this.image);
-            // console.log(this.title);
             this.isOpen= false;
             this.add_event();
         },
