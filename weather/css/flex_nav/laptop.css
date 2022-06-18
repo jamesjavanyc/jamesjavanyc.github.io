@@ -6,7 +6,7 @@
     nav div{
         display:none;
     }
-    ul{
+    nav ul{
         width:100%;
         display:flex;  
         flex-wrap: nowrap; 
@@ -14,9 +14,9 @@
         z-index:0;
         position:relative;
     }
-    li{
+    nav ul li{
         padding: 0 16px;
-        margin:0.3rem auto;
+        margin:0 auto;
         white-space:nowrap;
         text-overflow: clip;
     }

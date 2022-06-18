@@ -10,5 +10,5 @@
 @import url(./footer.css);
 
 :root{
-    --current-document-navid: 2;
+    --page-id: 2;
 }

@@ -2,7 +2,7 @@ import { laptopNavSwitch } from "./laptop.js";
 import { mobileNavSwitch } from "./mobile.js"
 
 function getNavOnChange(){
-    var nav_exp;
+    let nav_exp;
     if (window.outerWidth <= 33.5 * 16){
         nav_exp = mobileNavSwitch.getInstance();
     }else{
@@ -12,7 +12,7 @@ function getNavOnChange(){
 }
 
 const nav_exp = ()=>{
-    var initer =  getNavOnChange();
+    let initer =  getNavOnChange();
     initer();
 };
 
