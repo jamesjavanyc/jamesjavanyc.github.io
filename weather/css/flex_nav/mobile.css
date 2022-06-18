@@ -30,5 +30,8 @@
     #laptop_switch img{
         display:none;
     }
+    #laptop_switch{
+        display:none;
+    }
 
 }
