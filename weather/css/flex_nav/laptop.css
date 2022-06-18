@@ -15,7 +15,7 @@
         position:relative;
     }
     li{
-        padding: 0 20px;
+        padding: 0 16px;
         margin:0.3rem auto;
         white-space:nowrap;
         text-overflow: clip;

@@ -3,8 +3,8 @@ const setCurrentDate =() =>{
     let cur_dt_div = document.getElementById('current-datetime');
     var cur_dt = formatDateTime(new Date());
     cur_dt_div.innerHTML = cur_dt;
-    console.log(cur_dt);
-    console.log('Date init success');
+    // console.log(cur_dt);
+    // console.log('Date init success');
 
 }
 const formatDateTime = (date) => {

@@ -13,14 +13,16 @@ nav a{
     text-decoration: none;
     font-family:var(--header-font);
     font-size:1.2rem;
-    line-height:1.2rem;
+    line-height:1.6rem;
 }
 nav a:hover{
     color: yellow;
     text-decoration: none;
     font-family:var(--header-font);
     font-size:1.2rem;
-    line-height:1.2rem;
+    line-height:1.6rem;
+    border:1px solid white;
+    border-radius: 2px;
 }
 /* desktop */
 /* @media only screen and (min-width:960px){
