@@ -4,9 +4,9 @@ import { mobileNavSwitch } from "./mobile.js"
 function getNavOnChange(){
     var nav_exp;
     if (window.outerWidth <= 33.5 * 16){
-        nav_exp = mobileNavSwitch;
+        nav_exp = mobileNavSwitch.getInstance();
     }else{
-        nav_exp = laptopNavSwitch;
+        nav_exp = laptopNavSwitch.getInstance();
     }
     return nav_exp;
 }
