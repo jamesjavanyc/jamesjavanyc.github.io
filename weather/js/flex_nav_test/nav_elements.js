@@ -13,9 +13,9 @@ const nav_elements_initer = ()=>{
             this.lp_switch = this.nav_list.children[this.nav_list.children.length-1];
             // console.log(this.lp_switch)
             if (window.innerWidth>1160){
-                nav_elements.lp_switch.setAttribute('style', 'display:none;');
+                nav_elements.lp_switch.children[0].setAttribute('style', 'display:none;');
             }
-            this.nav_list.children[parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim())-1].children[0].setAttribute('style','color:gray;');
+            this.nav_list.children[parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim())-1].children[0].setAttribute('style','color:yellow;');
             this.mb_switch_icon= this.mb_switch.childNodes[1];
             this.mb_switch_title= this.mb_switch.childNodes[2];
             this.mb_switch_title = this.mb_switch.children[this.mb_switch.children.length-1];

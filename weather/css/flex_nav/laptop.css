@@ -21,9 +21,8 @@
         text-overflow: clip;
     }
     #laptop_switch{
-        /* margin-top: -22px; */
-        display:inline-block;
         position:absolute;
+        float:right;
         right: -1%;
         height:1.5rem;
         width: 4rem;
@@ -31,8 +30,6 @@
         background-color:var(--nav-color);
     }
     #laptop_switch img{
-        float:left;
         height:1.5rem;
-        background-color:var(--nav-color);
     }
 }
