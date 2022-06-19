@@ -11,4 +11,6 @@
 
 :root{
     --page-id: 2;
+    --mb-lp-width:32.5rem;
+    --lp-dt-width:960px;
 }

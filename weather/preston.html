@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="./css/preston.css">
 </head>
 <body>
+    <div id="banner-top">
+        <p>
+            Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
     <header>
         <div id="logo-title">
             <div id="logo">
@@ -15,7 +20,7 @@
             </div>
             <div id="title">
                 <h1>Jimmy Weather</h1>
-                <p>Accurate Weather Information</p>
+                <p>Accurate Weather</p>
             </div>
         </div>
         <nav>
@@ -37,8 +42,42 @@
         </nav>
     </header>
     <main>
-        <div>
-            <p>Hero w/weather summary</p>
+        <h2>Prestion Idaho</h2>
+        <div id="herosummary">
+            <figure>
+                <!-- 独立于文档的流 -->
+                <img id="hero-img" srcset="./images/hero-original.jpeg" alt="hero-image">
+                <figcaption></figcaption>
+            </figure>
+            <ul id="weather-summary">
+                <h3>Weather Summary</h3>
+                <li class="ws_i">
+                    <span class="ws_k">Currently</span>
+                    <span class="ws_sep">&nbsp;:&nbsp;</span>
+                    <span class="ws_v">Sunny</span>
+                </li>
+                <li class="ws_i">
+                    <span class="ws_k">High</span>
+                    <span class="ws_sep">&nbsp;:&nbsp;</span>
+                    <span class="ws_v">76℉</span>
+                </li>
+                <li class="ws_i">
+                    <span class="ws_k">Wind Chill</span>
+                    <span class="ws_sep">&nbsp;:&nbsp;</span>
+                    <span class="ws_v">℉</span>
+                </li>
+                <li class="ws_i">
+                    <span class="ws_k">Humidity</span>
+                    <span class="ws_sep">&nbsp;:&nbsp;</span>
+                    <span class="ws_v">69%</span>
+                </li>
+                <li class="ws_i">
+                    <span class="ws_k">Wind Speed</span>
+                    <span class="ws_sep">&nbsp;:&nbsp;</span>
+                    <span class="ws_v">5 mph</span>
+                </li>
+            </ul>
+            </div>
         </div>
         <div>
             <p>5 Day Forecast</p>

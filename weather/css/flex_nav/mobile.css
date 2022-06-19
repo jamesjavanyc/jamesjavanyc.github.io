@@ -1,7 +1,24 @@
 /* mobile */
 @media only screen and (max-width:32.5rem){
+    /* wireframe---- */
+    header{
+        position: relative;
+    }
+    /* wireframe */
+    #logo-title{
+        margin:0 -2rem 0 0;
+        padding:0;
+        width: 60%;
+        font-size: 0.8rem;
+        min-height:5rem;
+    }
     nav div{
-        display:block;
+        /* wireframe---- */
+        width: 5rem;
+        position: absolute;
+        right: 7%;
+        bottom:35%;
+        /* wireframe----*/
         display: grid;
         grid-template-columns:repeat(auto-fill,minmax(2rem, auto));
         height:2rem;
@@ -26,6 +43,7 @@
     }
     nav ul li{
         margin: 1rem auto 0;
+        text-align: center;
     }
     #laptop_switch img{
         display:none;

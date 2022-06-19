@@ -16,14 +16,14 @@
     }
     nav ul li{
         padding: 0 16px;
-        margin:0 auto;
+        margin:0 max(2rem);
         white-space:nowrap;
         text-overflow: clip;
     }
     #laptop_switch{
         position:absolute;
         float:right;
-        right: -1%;
+        right: -5%;
         height:1.5rem;
         width: 4rem;
         z-index:1;
@@ -31,5 +31,11 @@
     }
     #laptop_switch img{
         height:1.5rem;
+    }
+    /* wireframe */
+    #logo-title{
+        padding: 2rem;
+        margin:0 auto;
+        max-width: 20rem;
     }
 }
