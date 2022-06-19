@@ -1,10 +1,11 @@
 @import url(./herosummary/mobilesummary.css);
 @import url(./herosummary/laptopsummary.css);
 
-#weather-summary h3{
+#weather-summary p{
     margin: 0 auto 0.2rem;
     border-bottom: 1px solid white;
     padding-bottom: 0.2rem;
+    font-weight:bold;
 }
 .ws_i{
     vertical-align: top;

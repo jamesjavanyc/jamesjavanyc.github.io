@@ -1,6 +1,7 @@
 import { nav_elements} from "./nav_elements.js";
 
 var nav = nav_elements.getInstance();
+var init_id = 0;
 
 const open_menu = ()=>{
     if(nav.lp_isOpen){
@@ -30,6 +31,11 @@ const laptopNavSwitch = ()=>{
     open_menu();
 }
 laptopNavSwitch.getInstance = function(){
+    //lazy load
+    if (init_id == 0 ){
+        init();
+        init_id =1;
+    }
     return this.instance || (this.instance = laptopNavSwitch);
 
 }
@@ -40,7 +46,6 @@ const init = () =>{
     add_listener();
     laptopNavSwitch.instance = laptopNavSwitch;
 }
-init();
 
 
 export {laptopNavSwitch};

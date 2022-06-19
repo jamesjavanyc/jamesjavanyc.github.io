@@ -1,6 +1,6 @@
 import { nav_elements } from "./nav_elements.js";
 var nav = nav_elements.getInstance();
-
+var init_id = 0;
 const open_menu = ()=>{
     if(!nav.mb_isOpen){
         nav.mb_switch_title.innerText = 'Menu';
@@ -26,6 +26,11 @@ const mobileNavSwitch =()=> {
     open_menu();
 }
 mobileNavSwitch.getInstance = function(){
+    //lazy load
+    if (init_id == 0 ){
+        init();
+        init_id =1;
+    }
     return this.instance || (this.instance = mobileNavSwitch);
 }
 
@@ -35,7 +40,6 @@ const init = ()=>{
     add_listener();
     mobileNavSwitch.instance = mobileNavSwitch;
 }
-init();
 
 
 export { mobileNavSwitch};
