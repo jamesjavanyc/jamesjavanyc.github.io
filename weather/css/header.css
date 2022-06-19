@@ -20,7 +20,8 @@ header h1, header p{
     float:left;
 }
 #logo img{
-    max-height: 4rem;
+    height: 3rem;
+    width: 4rem;
 }
 
 
