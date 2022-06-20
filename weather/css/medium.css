@@ -1,0 +1,66 @@
+/* laptop */
+@media only screen and (max-width:1096px) and (min-width:32.5rem){
+    #logo-title{
+        padding: 2rem;
+        margin:0 auto;
+        max-width: 20rem;
+    }
+    /*  -------------------nav bar*/
+    nav{
+        padding:1.2rem;
+    }
+    nav div{
+        display:none;
+    }
+    nav ul{
+        width:100%;
+        display:flex;  
+        flex-wrap: nowrap; 
+        overflow: hidden;
+        z-index:0;
+        position:relative;
+    }
+    nav ul li{
+        padding: 0 16px;
+        margin:0 max(2rem);
+        white-space:nowrap;
+        text-overflow: clip;
+    }
+    #laptop_switch{
+        display:inline-block;
+        position:absolute;
+        right: -18%;
+        height:1.5rem;
+        width: 10rem;
+        z-index:1;
+        background-color:var(--nav-color);
+    }
+    #laptop_switch img{
+        height:1.5rem;
+    }
+    #mobile_switch{
+        display:none;
+    }
+    /* ------------------------------hero summary */
+    main{
+        width: 80%;
+        margin:2rem auto 0;
+        font-family: var(--content-font);
+    }
+    #herosummary{
+        position: relative;
+    }
+    #weather-summary{
+        position: absolute;
+        left: 5%;
+        top:30%;
+        width: 20rem;
+        border-radius: 10px;
+        background-color: var(--title-color);
+        opacity: 0.8;
+        color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+}
