@@ -3,20 +3,25 @@
     /* --------------------------nav bar ------------- */
     #logo-title{
         margin:0;
-        width: 100%;
+        width: 100vw;
         font-size: 0.8rem;
         min-height:5rem;
         display:flex;
         align-items:center;
-        justify-content:space-between;
+        justify-content:flex-start;
+    }
+    #title{
+        width:167px;
     }
 
     #mobile_switch{
+        float:right;
         display: flex;
+        margin:0 auto;
         padding:1rem;
         align-items:center;
         height:2rem;
-        width:5rem;
+        width:4rem;
     }
     #mobile_switch p{
         font-size:1rem;

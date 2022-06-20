@@ -35,6 +35,7 @@ laptopNavSwitch.getInstance = function(){
     if (init_id == 0 ){
         init();
         init_id =1;
+        // console.log('lp init');
     }
     return this.instance || (this.instance = laptopNavSwitch);
 

@@ -30,6 +30,7 @@ mobileNavSwitch.getInstance = function(){
     if (init_id == 0 ){
         init();
         init_id =1;
+        // console.log('mb init');
     }
     return this.instance || (this.instance = mobileNavSwitch);
 }

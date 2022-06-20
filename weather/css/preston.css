@@ -52,6 +52,7 @@ header h1, header p{
     float:left;
 }
 #logo img{
+    margin-top:0.5rem;
     max-height: 4rem;
     height:2rem;
     width:2.7rem;

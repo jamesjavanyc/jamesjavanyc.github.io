@@ -8,7 +8,7 @@ const nav_elements_initer = ()=>{
             this.nav = header.children[1];
             // console.log(this.nav)
             this.mb_switch = header.children[0].children[2];
-            console.log(this.mb_switch)
+            // console.log(this.mb_switch)
             this.nav_list = this.nav.children[0];
             // console.log(this.nav_list)
             this.lp_switch = this.nav_list.children[this.nav_list.children.length-1];
