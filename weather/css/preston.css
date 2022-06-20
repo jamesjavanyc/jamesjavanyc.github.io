@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Kdam+Thmor+Pro&family=Roboto:ital,wght@1,100&display=swap');
 /* normalize css */
 @import url(../../styles/normalize.css);
-
-/* current file css */
+/* common css */
 @import url(./small.css);
 @import url(./medium.css);
 @import url(./large.css);
+
 
 /* clean padding margin */
 *{
@@ -118,4 +118,5 @@ footer{
     font-size: 1.2rem;
     line-height: 1.6rem;
     text-align: center;
+
 }

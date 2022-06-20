@@ -1,5 +1,4 @@
 import {header} from '../init_dom.js'
-
 // singleton of nav bar object
 const nav_elements_initer = ()=>{
     // init the object
