@@ -29,13 +29,17 @@
     #laptop_switch{
         display:inline-block;
         position:absolute;
-        right: -18%;
+        right: -1%;
         height:1.5rem;
         width: 10rem;
         z-index:1;
         background-color:var(--nav-color);
+        padding:0;
+        margin:0;
     }
     #laptop_switch img{
+        display:inline-block;
+        float:left;
         height:1.5rem;
         width:1.5rem;
     }
