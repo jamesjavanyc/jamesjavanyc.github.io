@@ -45,8 +45,18 @@
         <h2>Prestion Idaho</h2>
         <div id="herosummary">
             <figure>
-                <!-- 独立于文档的流 -->
-                <img id="hero-img" srcset="./images/hero-400.jpg" src="./images/hero-400.jpg" alt="hero-image">
+                <picture>
+                    <source srcset="./images/hero-960.jpg"       
+                        media="(min-width: 1096px)">
+                    <source srcset="./images/hero-620.jpg"       
+                        media="(min-width: 32.5rem)">.
+                    <source srcset="./images/hero-400.jpg"       
+                        media="(max-width: 32.5rem)">
+                    <!-- 独立于文档的流 -->
+                    <img id="hero-img" alt="hero-image" 
+                        srcset="./images/hero-400.jpg 1x, ./images/hero-620.jpg 1.5x, ./images/hero-960.jpg 2x"
+                        src="./images/hero-400.jpg" >
+                </picture>
                 <figcaption></figcaption>
             </figure>
             <ul id="weather-summary">

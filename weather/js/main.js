@@ -2,7 +2,6 @@ import {main} from './init_dom.js'
 let weather = main.children[1].children[1];
 const setWindChill = ()=>{
     let windChill = calWindChill(getTemprature(), getSpeed());
-    console.log(windChill)
     windChill != '0'? weather.children[3].children[2].innerText = Math.round(windChill) + ' ℉':weather.children[3].style.display = 'none';
 }
 const getTemprature = ()=>{
