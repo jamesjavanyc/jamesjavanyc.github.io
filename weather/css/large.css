@@ -21,6 +21,9 @@
     #mobile_switch{
         display:none;
     }
+    #laptop_switch{
+        display:none;
+    }
     /* ------------------------------hero summary */
     main{
         width: 80%;
