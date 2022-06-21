@@ -1,6 +1,16 @@
 import {main} from './init_dom.js'
-let weather = main.children[1].children[1];
+import {page_nav_id} from './init_dom.js'
+
+let weather = '';
+if(page_nav_id == 2){
+    // only preston need
+    weather = main.children[1].children[1];
+}
 const setWindChill = ()=>{
+    if(page_nav_id != 2){
+        // only preston need
+        return;
+    }
     let windChill = calWindChill(getTemprature(), getSpeed());
     windChill != '0'? weather.children[3].children[2].innerText = Math.round(windChill) + ' ℉':weather.children[3].style.display = 'none';
 }

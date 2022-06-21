@@ -4,5 +4,8 @@ let header = body.children[1];
 let main = body.children[2];
 // console.log(main)
 
-export {body,header, banner, main};
+
+let page_nav_id = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim());
+
+export {body,header, banner, main, page_nav_id};
 

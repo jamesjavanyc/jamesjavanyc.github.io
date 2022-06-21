@@ -69,4 +69,16 @@
     #hero-img{
         width: 100%;
     }
+
+    #gallery{
+        width:100%;
+    }
+    .g-photo{
+        width: 95%;
+        margin:0 auto;
+        border:1px solid gray;
+        border-radius: 5%;
+        overflow: hidden;
+    
+    }
 }

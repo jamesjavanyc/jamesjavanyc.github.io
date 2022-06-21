@@ -1,10 +1,15 @@
+import {page_nav_id} from './init_dom.js'
+
 // run when init
 const setCurrentDate =() =>{
-    let cur_dt_div = document.getElementById('current-datetime');
-    var cur_dt = formatDateTime(new Date());
-    cur_dt_div.innerHTML = cur_dt;
-    // console.log(cur_dt);
-    // console.log('Date init success');
+    console.log()
+    if(page_nav_id == 2){
+        let cur_dt_div = document.getElementById('current-datetime');
+        var cur_dt = formatDateTime(new Date());
+        cur_dt_div.innerHTML = cur_dt;
+        // console.log(cur_dt);
+        // console.log('Date init success');
+    }
 
 }
 const formatDateTime = (date) => {
