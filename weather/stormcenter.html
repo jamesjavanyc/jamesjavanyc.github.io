@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JimmyWeather</title>
+    <link rel="stylesheet" type="text/css" href="./css/stormcenter.css">
+</head>
+<body>
+    <div id="banner-top">
+        <p>
+            Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+    <header>
+        <div id="logo-title">
+            <div id="logo">
+                <img src="./images/weather-header-logo-small.png" alt="logo">
+            </div>
+            <div id="title">
+                <h1>Jimmy Weather</h1>
+                <p>Accurate Weather</p>
+            </div>
+            <div id="mobile_switch">
+                <img src="./images/menu-icon-small.png" alt="menu">
+                <p id="mobile_nav_title">Menu</p>
+            </div>
+        </div>
+        <nav>
+            <ul id="nav_list">
+                <li><a href="">Home</a></li>
+                <li><a href="./preston.html">Preston</a></li>
+                <li><a href="">Soda Spring</a></li>
+                <li><a href="">Fish Heaven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a href="./gallery-7.html">Gallery</a></li>
+                <li id="laptop_switch">
+                    <img src="./images/right-open-menu.png" alt="">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Storm Center - Report A Storm!</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Reporer's Information</legend>
+                <label class="reporter_info">First Name * <input type="text" name="fname" required></label>
+                <label class="reporter_info">Last Name * <input type="text" name="lname" required></label>
+                <label class="reporter_info">Phone * <input type="tel" name="phone" placeholder="1234567890" required></label>
+                <label class="reporter_info">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="reporter_info">Zip Code * <input type="text" name="fname" required></label>
+                <label class="reporter_info">Website <input type="url" name="url" placeholder="http://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="storm_info">Storm Date<input type="date" name="stormDate" placeholder="01/01/2022"></label>
+                <label class="storm_info">Storm Type<input type="text" name="stormType" placeholder=""></label>
+                <label class="storm_info">Storm Region 
+                    <select name="area" id="">
+                        <option value="" disabled="disabled" selected="selected">Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="SodaSpring">Soda Spring</option>
+                        <option value="FishHeaven">Fish Heaven</option>
+                    </select>
+                </label>
+                <label class="storm_info">Storm Severity<input value="5" min="1" max="10" step="1" id="storm_rate_input" type="range" name="stormSeverity" list="tickmarks" oninput="adjustRating" onchange="adjustRating"><span id="str_range"></span></label>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <div>Are You In Danger?</div>
+                <label class="add_info_radio"><input type="radio" name="in_danger" value="Yes">Yes</label>
+                <label class="add_info_radio"><input type="radio" name="in_danger" value="No">No</label>
+                <label class="add_info_radio"><input type="radio" name="in_danger" value="Maybe">Maybe</label>
+                <div>Need Help?</div>
+                <label class="add_info_ck"><input type="checkbox" name="need_help" value="Get A Van">Get A Van</label>
+                <label class="add_info_ck"><input type="checkbox" name="need_help" value="Need Rescue">Need Rescue</label>
+                <label class="add_info_ck"><input type="checkbox" name="need_help" value="Other Supplies">Other Supplies</label>
+                <div>Additional Information</div>
+                <label><textarea rows="3" cols="20" placeholder="type your additional information here..."></textarea></label>
+            </fieldset>
+            <label class="submit_btn"><input type="submit" value="Submit Your Report" ></label>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p id="copyright">&copy;JimmyWeather&nbsp;|&nbsp;Attributes&nbsp;|&nbsp;Junzhou Liu&nbsp;</p>
+            <p id="current-datetime"></p>
+        </div>
+    </footer>
+    <!-- initialize data -->
+    <!-- <script>
+        function adjustRating(rating) {
+            console.log(10);
+            document.getElementById("str_range").innerHTML = rating;
+        }
+    </script> -->
+    <script type="module" src="./js/init.js"></script> 
+    <script type="module" src="./js/setStormLevel.js"></script> 
+    
+</body>
+</html>
