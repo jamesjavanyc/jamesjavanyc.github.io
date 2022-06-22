@@ -99,6 +99,12 @@ select,.storm_info input,.reporter_info input, textarea{
     color:white;
 }
 
+#str_range{
+    margin-top:-2.8rem;
+    margin-left:16rem;
+    line-height:2.5rem;
+}
+
 /* --------------------------------header -------------------------------- */
 #banner-top{
     width: 100%;

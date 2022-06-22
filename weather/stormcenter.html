@@ -65,7 +65,7 @@
                         <option value="FishHeaven">Fish Heaven</option>
                     </select>
                 </label>
-                <label class="storm_info">Storm Severity<input value="5" min="1" max="10" step="1" id="storm_rate_input" type="range" name="stormSeverity" list="tickmarks" oninput="adjustRating" onchange="adjustRating"><span id="str_range"></span></label>
+                <label class="storm_info">Storm Severity<input value="5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" min="1" max="10" step="1" id="storm_rate_input" type="range" name="stormSeverity" list="tickmarks"><p id="str_range"></p></label>
 
 
             </fieldset>
@@ -93,13 +93,16 @@
     </footer>
     <!-- initialize data -->
     <!-- <script>
-        function adjustRating(rating) {
-            console.log(10);
-            document.getElementById("str_range").innerHTML = rating;
-        }
+        // function adjustRating(rating) {
+        //     document.getElementById("str_range").innerHTML = rating;
+        // }
+        // const adjustRating= ()=> {
+        //     document.getElementById("str_range").innerHTML = document.getElementById('storm_rate_input').value;
+        // }
     </script> -->
     <script type="module" src="./js/init.js"></script> 
-    <script type="module" src="./js/setStormLevel.js"></script> 
+    <!-- 这里需要 text/javascript 以保证导出函数全局 module是局部函数对外不可见-->
+    <script type="text/javascript" src="./js/setStormLevel.js"></script> 
     
 </body>
 </html>
