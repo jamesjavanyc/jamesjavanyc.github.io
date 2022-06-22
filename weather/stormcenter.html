@@ -55,17 +55,17 @@
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label class="storm_info">Storm Date<input type="date" name="stormDate" placeholder="01/01/2022"></label>
+                <label class="storm_info">Storm Date<input type="date" name="stormDate"></label>
                 <label class="storm_info">Storm Type<input type="text" name="stormType" placeholder=""></label>
                 <label class="storm_info">Storm Region 
-                    <select name="area" id="">
+                    <select name="area">
                         <option value="" disabled="disabled" selected="selected">Select Region</option>
                         <option value="Preston">Preston</option>
                         <option value="SodaSpring">Soda Spring</option>
                         <option value="FishHeaven">Fish Heaven</option>
                     </select>
                 </label>
-                <label class="storm_info">Storm Severity<input value="5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" min="1" max="10" step="1" id="storm_rate_input" type="range" name="stormSeverity" list="tickmarks"><p id="str_range"></p></label>
+                <label class="storm_info">Storm Severity<input value="5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" min="1" max="10" step="1" id="storm_rate_input" type="range" name="stormSeverity"><p id="str_range"></p></label>
 
 
             </fieldset>

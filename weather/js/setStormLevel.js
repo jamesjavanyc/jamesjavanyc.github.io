@@ -2,6 +2,7 @@ const adjustRating= (value)=> {
 	console.log(document.getElementById('storm_rate_input').value);
     document.getElementById("str_range").innerHTML = value;
 }
+adjustRating(5);
 
 // function adjustRating(rating) {
 //     document.getElementById("ratingvalue").innerHTML = rating;
