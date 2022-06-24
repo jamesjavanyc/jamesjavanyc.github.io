@@ -110,6 +110,11 @@ nav a:hover{
 #hero-img{
     width: 100%;
 }
+#last_ga{
+    height: 10px;
+    display:block;
+    border:none;
+}
 /* ---------------------------------------footer -------------- */
 footer{
     padding:2rem;
