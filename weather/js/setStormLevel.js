@@ -1,5 +1,5 @@
 const adjustRating= (value)=> {
-	console.log(document.getElementById('storm_rate_input').value);
+	// console.log(document.getElementById('storm_rate_input').value);
     document.getElementById("str_range").innerHTML = value;
 }
 adjustRating(5);

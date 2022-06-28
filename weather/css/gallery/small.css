@@ -10,11 +10,10 @@
         width:100%;
     }
     .g-photo{
+        background-color:rgb(207,233,247);
         width: 95%;
-        margin:0 auto;
-        border:1px solid gray;
+        margin:1rem auto;
         border-radius: 5%;
         overflow: hidden;
-    
     }
 }

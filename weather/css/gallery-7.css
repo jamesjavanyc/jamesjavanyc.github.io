@@ -34,9 +34,6 @@ html, body {
 
 
 /* ---------------------------------------main -------------- */
-.g-photo{
-    margin:5px;
-}
 .g-photo p{
     text-align: center;
 }
@@ -54,5 +51,5 @@ html, body {
     filter: blur(0.2em);
 }
 #last_ga{
-    border:none;
+    background-color: transparent;
 }
