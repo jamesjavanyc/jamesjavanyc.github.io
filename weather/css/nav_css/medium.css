@@ -1,0 +1,48 @@
+@media only screen and (max-width:1096px) and (min-width:32.5rem){
+    #logo-title{
+        padding: 2rem;
+        margin:0 auto;
+        max-width: 20rem;
+    }
+    /*  -------------------nav bar*/
+    nav{
+        padding:1.2rem;
+    }
+    nav div{
+        display:none;
+    }
+    nav ul{
+        width:100%;
+        display:flex;  
+        flex-wrap: nowrap; 
+        overflow: hidden;
+        z-index:0;
+        position:relative;
+    }
+    nav ul li{
+        padding: 0 16px;
+        margin:0 max(2rem);
+        white-space:nowrap;
+        text-overflow: clip;
+    }
+    #laptop_switch{
+        display:inline-block;
+        position:absolute;
+        right: -1%;
+        height:1.5rem;
+        width: 10rem;
+        z-index:1;
+        background-color:var(--nav-color);
+        padding:0;
+        margin:0;
+    }
+    #laptop_switch img{
+        display:inline-block;
+        float:left;
+        height:1.5rem;
+        width:1.5rem;
+    }
+    #mobile_switch{
+        display:none;
+    }
+}

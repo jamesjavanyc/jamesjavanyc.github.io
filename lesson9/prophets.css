@@ -1,0 +1,30 @@
+h1, footer{
+    text-align:center;
+    height: 3rem;
+    font-size: 2rem;
+}
+main{
+    background-color:gray;
+    padding: 1rem;
+}
+.cards{
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+h2{
+    text-align:center;
+}
+section{
+    display:flex;
+    min-width: 16rem;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1rem;
+}
+img{
+    width:200px;
+    margin: 0 auto;
+}

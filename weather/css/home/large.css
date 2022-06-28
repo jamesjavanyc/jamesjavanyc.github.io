@@ -1,0 +1,27 @@
+@media only screen and (min-width:1096px){
+    main{
+        margin:0 auto;
+    }
+    .citys{
+        width:80%;
+        min-width:980px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        margin:1rem auto;
+        background-color:rgb(207,233,247);
+        text-align:center;
+    }
+    .city{
+        padding:1rem;
+        width:30%;
+    }
+    .info{
+        background-color:rgb(255,243,205);
+        padding: 0.5rem;
+        border-bottom: 1px solid black;
+    }
+    .city img{
+        width:100%;
+    }
+}

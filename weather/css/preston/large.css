@@ -1,0 +1,25 @@
+/* desktop */
+@media only screen and (min-width:1096px){
+    /* ------------------------------hero summary */
+    main{
+        width: 80%;
+        margin:2rem auto 0;
+        font-family: var(--content-font);
+    }
+    #herosummary{
+        position: relative;
+    }
+    #weather-summary{
+        position: absolute;
+        left: 5%;
+        top:30%;
+        width: 20rem;
+        border-radius: 10px;
+        background-color: var(--title-color);
+        opacity: 0.8;
+        color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+}

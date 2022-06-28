@@ -1,0 +1,25 @@
+/* laptop */
+@media only screen and (max-width:1096px) and (min-width:32.5rem){
+    /* ------------------------------hero summary */
+    main{
+        width: 80%;
+        margin:2rem auto 0;
+        font-family: var(--content-font);
+    }
+
+    #gallery{
+        display:flex;
+        flex-wrap:wrap;
+        margin: 2rem auto;
+        width: 90%;
+        justify-content:center;
+    }
+    .g-photo{
+        width: 30%;
+        padding:1rem;
+        margin:1rem auto 0;
+        border:1px solid gray;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+}

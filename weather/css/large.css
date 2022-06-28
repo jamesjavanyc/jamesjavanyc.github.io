@@ -1,64 +1,9 @@
 /* desktop */
 @media only screen and (min-width:1096px){
-    #logo-title{
-        padding: 2rem;
-        margin:0 auto;
-        max-width: 20rem;
-    }
-    /* --------------------------nav bar ------------- */
-    nav{
-        padding:1.2rem;
-    }
-    nav div{
-        display:none;
-    }
-    nav ul{
-        width:100%;
-        display:flex;  
-        flex-wrap: nowrap;  
-        width:1096px;
-    }
-    #mobile_switch{
-        display:none;
-    }
-    #laptop_switch{
-        display:none;
-    }
     /* ------------------------------hero summary */
     main{
         width: 80%;
         margin:2rem auto 0;
         font-family: var(--content-font);
-    }
-    #herosummary{
-        position: relative;
-    }
-    #weather-summary{
-        position: absolute;
-        left: 5%;
-        top:30%;
-        width: 20rem;
-        border-radius: 10px;
-        background-color: var(--title-color);
-        opacity: 0.8;
-        color:white;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-    }
-
-    #gallery{
-        display:flex;
-        flex-wrap:wrap;
-        margin: 2rem auto;
-        width: 90%;
-    }
-    .g-photo{
-        width: 30%;
-        padding:1rem;
-        margin:1rem auto 0;
-        border:1px solid gray;
-        border-radius: 5%;
-        overflow: hidden;
     }
 }

@@ -1,0 +1,52 @@
+@media only screen and (max-width:32.5rem){
+ /* --------------------------nav bar ------------- */
+    #logo-title{
+        margin:0;
+        width: 100vw;
+        font-size: 0.8rem;
+        min-height:5rem;
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+    }
+    #title{
+        width:167px;
+    }
+
+    #mobile_switch{
+        float:right;
+        display: flex;
+        margin-left:auto;
+        padding:1rem;
+        align-items:center;
+        height:2rem;
+        width:4rem;
+    }
+    #mobile_switch p{
+        font-size:1rem;
+        line-height:1rem;
+        display: inline-block;
+        color: white;
+    }
+    #mobile_switch img{
+        display:inline-block;
+        background-color: gray;
+        border-radius: 3px;
+        opacity:0.6;
+        filter:alpha(opacity=60);
+        height:1rem;
+        width:1rem;
+    }
+    nav ul{
+        flex-direction:column;
+    }
+    nav ul li{
+        margin: 1rem auto 0;
+    }
+    #laptop_switch img{
+        display:none;
+    }
+    #laptop_switch{
+        display:none;
+    }
+}

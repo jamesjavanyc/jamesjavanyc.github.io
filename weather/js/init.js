@@ -4,6 +4,7 @@ import {setBanner} from './header.js'
 import {setWindChill} from './main.js'
 import {page_nav_id} from './init_dom.js'
 import {lazyloadImage} from './lazyload.js'
+import {setCityWeather} from './homepage_city_weather.js'
 
 
 let initdata = new Array();
@@ -16,10 +17,12 @@ if(page_nav_id == 2){
 }else if(page_nav_id == 5){
     // console.log(5)
     initdata.push(setCurrentDate);
-}
-else if(page_nav_id == 6){
+}else if(page_nav_id == 6){
     // console.log(6)
     initdata.push(lazyloadImage);
+}else if(page_nav_id == 1){
+    initdata.push(setCityWeather);
+    // console.log(1)
 }
 
 

@@ -1,0 +1,26 @@
+@media only screen and (min-width:1096px){
+    #logo-title{
+        padding: 2rem;
+        margin:0 auto;
+        max-width: 20rem;
+    }
+    /* --------------------------nav bar ------------- */
+    nav{
+        padding:1.2rem;
+    }
+    nav div{
+        display:none;
+    }
+    nav ul{
+        width:100%;
+        display:flex;  
+        flex-wrap: nowrap;  
+        width:1096px;
+    }
+    #mobile_switch{
+        display:none;
+    }
+    #laptop_switch{
+        display:none;
+    }
+}
