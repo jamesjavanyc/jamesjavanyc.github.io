@@ -1,8 +1,7 @@
 @media only screen and (max-width:1096px) and (min-width:32.5rem){
     /* ------------------------------hero summary */
     main{
-        width: 80%;
-        margin:2rem auto 0;
+        margin-top:2rem;
         font-family: var(--content-font);
     }
 
@@ -10,12 +9,11 @@
         display:flex;
         flex-wrap:wrap;
         margin: 2rem auto;
-        width: 90%;
         justify-content:center;
     }
     .g-photo{
         background-color:rgb(207,233,247);
-        width: 30%;
+        width: 40%;
         padding:1rem;
         margin:1rem auto 0;
         border-radius: 5%;
