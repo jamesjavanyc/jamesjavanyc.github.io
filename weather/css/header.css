@@ -52,6 +52,5 @@ nav a:hover{
     font-family:var(--header-font);
     font-size:1.2rem;
     line-height:1.6rem;
-    border:1px solid white;
-    border-radius: 2px;
+    border-bottom:1px solid white;
 }

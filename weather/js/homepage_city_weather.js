@@ -46,6 +46,13 @@ const setCityWeather = async()=>{
         
         i = i + 1;
     });
+    while (i % 3 != 0){
+        let holder = document.createElement('div');
+        holder.setAttribute('style', 'background-color:transparent;');
+        holder.classList.add('city');
+        citys.appendChild(holder);
+        i++;
+    }
     
 }
 
