@@ -71,7 +71,7 @@ html, body {
 }
 #forecast_sum{
     display:flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     width:99%;
     max-width:960px;
     border:1px solid black;
