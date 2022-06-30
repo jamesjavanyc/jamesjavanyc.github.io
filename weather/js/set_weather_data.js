@@ -29,7 +29,7 @@ const setForecast = (dataSet)=>{
             forecast_sum.children[day].children[1].children[0].src
                 = 'http://openweathermap.org/img/wn/'+ dataSet[i].weather[0].icon +'@2x.png';
             forecast_sum.children[day].children[1].children[1].innerText
-                = dataSet[i].main.temp + ' ℉';
+                = (1.8 * (parseFloat(dataSet[i].main.temp) - 273) + 32).toFixed(2) + ' ℉';
             //update recorder
             pre_date = dataSet[i].dt_txt.substring(0,10);
             day++;
