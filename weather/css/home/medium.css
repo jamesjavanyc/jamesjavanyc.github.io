@@ -25,4 +25,8 @@
         width:50%;
         height:100%;
     }
+    .holder{
+        margin:0; 
+        padding:0;
+    }
 }

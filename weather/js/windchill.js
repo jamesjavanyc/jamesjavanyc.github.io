@@ -1,27 +1,25 @@
 import {main} from './init_dom.js'
 import {page_nav_id} from './init_dom.js'
 
-let weather = '';
+let weather;
 if(page_nav_id == 2){
     // only preston need
     weather = main.children[1].children[1];
 }
 const setWindChill = ()=>{
-    if(page_nav_id != 2){
-        // only preston need
-        return;
-    }
     let windChill = calWindChill(getTemprature(), getSpeed());
-    windChill != '0'? weather.children[3].children[2].innerText = Math.round(windChill) + ' ℉':weather.children[3].style.display = 'none';
+    windChill != '0'? weather.children[3].children[2].innerText = Math.round(windChill) + ' ℉':weather.children[3].children[2].innerText = 'N/A';
 }
 const getTemprature = ()=>{
     let temp =  weather.children[1].children[2].innerText;
-    temp = parseInt(temp.substring(0, temp.length-1));
+    temp = parseFloat(temp.substring(0, temp.length-1));
+    // console.log(temp)
     return temp;
 }
 const getSpeed = ()=>{
     let speed =  weather.children[5].children[2].innerText;
-    speed = parseInt(speed.substring(0, speed.length-4));
+    speed = parseFloat(speed.substring(0, speed.length-4));
+    // console.log(speed)
     return speed;
 }
 

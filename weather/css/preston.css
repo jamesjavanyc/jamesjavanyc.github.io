@@ -31,6 +31,7 @@ html, body {
     height:100%;
 }
 /* ------------------------------------------main------------ */
+/*   hero image */
 
 #weather-summary p{
     margin: 0 auto 0.2rem;
@@ -58,4 +59,45 @@ html, body {
 }
 #hero-img{
     width: 100%;
+}
+.cur_weather{
+    text-transform: capitalize;
+}
+
+/*      forecast */
+#forecast_title{
+    text-align: center;
+    margin: 1rem auto;
+}
+#forecast_sum{
+    display:flex;
+    flex-wrap: no-wrap;
+    width:99%;
+    max-width:960px;
+    border:1px solid black;
+    border-right: 0;
+}
+.day_fore{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    width:20%;
+    border-right:1px solid black;
+}
+.day{
+    background-color:rgb(127,171,140);
+}
+.day p{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    font-weight:bold;
+}
+.icon p{
+    text-align: center;
+    font-weight:bold;
+    margin:0.4rem auto;
+}
+.icon img{
+    width:100%;
 }

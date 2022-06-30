@@ -51,4 +51,8 @@ main h2{
     font-weight: 900;
     font-size: 2rem;
 }
+.holder{
+    background-color:transparent; 
+    height: 1px;
+}
 
