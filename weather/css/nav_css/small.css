@@ -33,7 +33,7 @@
         background-color: gray;
         border-radius: 3px;
         opacity:0.6;
-        filter:alpha(opacity=60);
+        /* filter:alpha(opacity=60); */
         height:1rem;
         width:1rem;
     }
