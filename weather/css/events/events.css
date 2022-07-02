@@ -1,0 +1,24 @@
+#events{
+    margin: 1rem auto;
+    width: 99%;
+    max-width:930px;
+    background-color:rgb(127, 171, 140);
+    padding: 1rem;
+    
+}
+#events h3{
+    text-align: center;
+    border-bottom: 1px solid yellow;
+    padding:12px;
+}
+#events ul{
+    display:flex;
+    flex-direction: column;
+}
+#events li{
+    margin: 0.2rem auto;
+}
+#events p{
+    font-weight: 600;
+    padding-top:6px;
+}

@@ -1,0 +1,73 @@
+/*   hero image */
+@import url(./large.css);
+@import url(./medium.css);
+@import url(./small.css);
+
+#weather-summary p{
+    margin: 0 auto 0.2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.2rem;
+    font-weight:bold;
+}
+.ws_i{
+    vertical-align: top;
+    margin: 0 auto;
+}
+.ws_k{
+    float:left;
+    width: 5.5rem;
+    text-align: right;
+}
+.ws_v{
+    float:right;
+    width: 6.5rem;
+    text-align: left;
+    color:yellow;
+}
+.ws_sep{
+    font-weight: 900;
+}
+#hero-img{
+    width: 100%;
+}
+.cur_weather{
+    text-transform: capitalize;
+}
+
+/*      forecast */
+#forecast_title{
+    text-align: center;
+    margin: 1rem auto;
+}
+#forecast_sum{
+    display:flex;
+    flex-wrap: nowrap;
+    width:99%;
+    max-width:960px;
+    border:1px solid black;
+    border-right: 0;
+}
+.day_fore{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    width:20%;
+    border-right:1px solid black;
+}
+.day{
+    background-color:rgb(127,171,140);
+}
+.day p{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    font-weight:bold;
+}
+.icon p{
+    text-align: center;
+    font-weight:bold;
+    margin:0.4rem auto;
+}
+.icon img{
+    width:100%;
+}

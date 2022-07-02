@@ -2,7 +2,7 @@ import {main} from './init_dom.js'
 import {page_nav_id} from './init_dom.js'
 
 let weather;
-if(page_nav_id == 2){
+if(page_nav_id == 2||page_nav_id == 3||page_nav_id == 4){
     // only preston need
     weather = main.children[1].children[1];
 }

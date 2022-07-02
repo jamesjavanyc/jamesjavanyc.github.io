@@ -3,7 +3,7 @@ import {page_nav_id, main} from './init_dom.js'
 import {setWindChill} from './windchill.js'
 
 let area_id = weather_id_dict[page_nav_id];
-const src_url = 'http://api.openweathermap.org/data/2.5/forecast?id='+ area_id+'&appid=f79199b4c26b59deed0f6f9aa899412e';
+let src_url = 'http://api.openweathermap.org/data/2.5/forecast?id='+ area_id+'&appid=f79199b4c26b59deed0f6f9aa899412e';
 
 const getWeatherData = async()=>{
     let dataSet =await (await fetch(src_url)).json();
