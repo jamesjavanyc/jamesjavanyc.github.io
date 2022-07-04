@@ -12,10 +12,10 @@ if(page_nav_id == 1 ){
 }else if(page_nav_id == 2){
     initdata.push(setLastUpdate);
     initdata.push(fill_motor);
-}else if(page_nav_id == 6){
+}else if(page_nav_id == 3){
 
-}else if(page_nav_id == 1){
-
+}else if(page_nav_id == 4){
+    initdata.push(setLastUpdate);
 }
 
 
