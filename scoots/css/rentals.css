@@ -1,0 +1,48 @@
+@import url(./components/template.css);
+/* define global css var */
+:root{
+    --title-font:Joan;
+    --header-font:Kdam;
+    --content-font:Roboto;
+
+    --header-color: rgb(222,225,230);
+
+    --page-id: 2;
+}
+html, body {
+    height:100%;
+}
+h3{
+    font-family:var(--header-font);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+h4{
+    font-family:var(--header-font);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto 0.5rem;
+}
+
+#call_action{
+    text-align: center;
+    font-family: var(--content-font);
+    font-size: 1.3rem;
+    width:80%;
+    margin:6rem auto 10rem;
+}
+
+#call_action a{
+    font-weight:600;
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    margin:0 auto;
+    border: 1px solid gray;
+    color:black;
+    border-radius:4px;
+    padding:1rem;
+    background-color:var(--header-color);
+    max-width:480px;
+}

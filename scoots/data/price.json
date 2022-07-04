@@ -1,3 +1,50 @@
 {
-    
+    "0":{
+        "name":"Honda Metro Scooter",
+        "max":"1",
+        "rhalf":"20",
+        "rfull":"30",
+        "whalf":"25",
+        "wfull":"35"
+    },
+    "1":{
+        "name":"Honda Dio Scooter",
+        "max":"2",
+        "rhalf":"30",
+        "rfull":"40",
+        "whalf":"35",
+        "wfull":"45"
+    },
+    "2":{
+        "name":"Honda PCX150 Scooter",
+        "max":"2",
+        "rhalf":"40",
+        "rfull":"50",
+        "whalf":"45",
+        "wfull":"55"
+    },
+    "3":{
+        "name":"Honda Pioneer ATV",
+        "max":"4",
+        "rhalf":"50",
+        "rfull":"70",
+        "whalf":"60",
+        "wfull":"80"
+    },
+    "4":{
+        "name":"Jeep Wrangler—4 door with a/c",
+        "max":"5",
+        "rhalf":"70",
+        "rfull":"100",
+        "whalf":"85",
+        "wfull":"125"
+    },
+    "5":{
+        "name":"Jeep Wrangler—2 door",
+        "max":"4",
+        "rhalf":"60",
+        "rfull":"85",
+        "whalf":"70",
+        "wfull":"90"
+    }
 }
