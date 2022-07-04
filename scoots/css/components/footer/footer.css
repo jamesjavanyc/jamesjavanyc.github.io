@@ -1,7 +1,8 @@
 footer{
     width: 100%;
     text-align: center;
-    padding: 1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
     font-family: var(--title-font);
 }
 

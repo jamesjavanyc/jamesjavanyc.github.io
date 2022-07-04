@@ -18,9 +18,9 @@ html, body {
     flex-direction: column;
 }
 .motor img{
-    max-width: 450px;
+    max-width: 250px;
     object-fit:cover;
-    width:50%;
+    width:40%;
 }
 .motor p{
     text-align: center;
@@ -51,7 +51,7 @@ html, body {
     margin: 0.6rem 0 0.2rem;
     font-family:var(--title-font);
     border-bottom: 1px solid black;
-    width: 15rem;
+    /* width: 15rem; */
 }
 .info{
     font-size:1.1rem;
@@ -60,7 +60,7 @@ html, body {
     font-family:var(--content-font);
 }
 .info span{
-    margin-right:1rem;
+    margin-right:0.7rem;
 }
 
 

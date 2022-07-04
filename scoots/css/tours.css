@@ -1,0 +1,33 @@
+@import url(./components/template.css);
+/* define global css var */
+:root{
+    --title-font:Joan;
+    --header-font:Kdam;
+    --content-font:Roboto;
+
+    --header-color: rgb(222,225,230);
+
+    --page-id: 2;
+}
+html, body {
+    height:100%;
+}
+main{
+    margin-bottom: 2rem;
+}
+
+h3, p{
+    font-family:var(--title-font);
+    width:80%;
+    margin:0 auto;
+}
+main p{
+    font-size:1.2rem;
+    font-weight: 500;
+    text-indent: 3em;
+}
+h3{
+    text-align:center;
+    margin: 3rem auto 1.5rem;
+    font-size:1.6rem;
+}
