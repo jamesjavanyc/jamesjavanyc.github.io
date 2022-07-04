@@ -1,0 +1,147 @@
+@import url(./components/template.css);
+/* define global css var */
+:root{
+    --title-font:Joan;
+    --header-font:Kdam;
+    --content-font:Roboto;
+
+    --header-color: rgb(222,225,230);
+
+    --page-id: 1;
+}
+html, body {
+    height:100%;
+}
+
+.motor_type{
+    text-align: center;
+}
+.motor_type li{
+    margin: 0.5rem auto;
+    font-family:var(--content-font);
+    font-weight:600;
+}
+h4{
+    font-size:1.2rem;
+}
+
+#call_action{
+    text-align: center;
+    font-family: var(--content-font);
+    font-size: 1.3rem;
+    width:80%;
+    margin:3rem auto 10rem;
+}
+#call_action p{
+    margin: 1rem auto;
+    font-weight:600;
+}
+#call_action a{
+    font-weight:600;
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    margin:4rem auto;
+    border: 1px solid gray;
+    color:black;
+    border-radius:4px;
+    padding:1rem;
+    background-color:var(--header-color);
+    max-width:480px;
+}
+
+#weather-summary{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+#weather-summary p{
+    margin: 0 auto 0.2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.2rem;
+    font-weight:bold;
+}
+.ws_i{
+    max-width: 360px;
+    vertical-align: top;
+    margin: 0 auto;
+    background-color: beige;
+    padding: 0.3rem;
+}
+.ws_k{
+    float:left;
+    width: 7.5rem;
+    text-align: right;
+}
+.ws_v{
+    float:right;
+    width: 7.5rem;
+    text-align: left;
+}
+.ws_sep{
+    font-weight: 900;
+}
+#hero-img{
+    width: 100%;
+}
+.cur_weather{
+    text-transform: capitalize;
+}
+
+/*      forecast */
+#forecast_title{
+    text-align: center;
+    margin: 1rem auto;
+}
+#forecast_sum{
+    display:flex;
+    flex-wrap: nowrap;
+    width:99%;
+    margin:0 auto;
+    max-width:960px;
+    border:1px solid black;
+    border-right: 0;
+}
+.day_fore{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    width:20%;
+    border-right:1px solid black;
+}
+.day{
+    background-color:rgb(127,171,140);
+}
+.day p{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    font-weight:bold;
+}
+.icon p{
+    text-align: center;
+    font-weight:bold;
+    margin:0.4rem auto;
+}
+.icon img{
+    width:100%;
+}
+
+
+h3{
+    text-align: center;
+    margin: 2rem auto 1rem;
+    font-size: 2rem;
+    font-family: var(--title-font);
+}
+#contact_us ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+#contact_us img{
+    width:3.5rem;
+    height:3.5rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--header-color);
+}

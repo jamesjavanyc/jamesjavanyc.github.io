@@ -1,0 +1,9 @@
+@media only screen and (min-width: 32.5rem)and (max-width: 1096px){
+    header{
+        width:100%;
+        flex-direction: column;
+    }
+    #mobile_switch{
+        display:none;
+    }
+}

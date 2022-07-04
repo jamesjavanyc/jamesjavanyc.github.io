@@ -1,0 +1,13 @@
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--title-font);
+}
+
+@media only screen and (max-width: 32.5rem){
+    footer{
+        background-color:var(--header-color);
+        background: linear-gradient(white,var(--header-color));
+    }
+}

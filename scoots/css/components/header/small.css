@@ -1,0 +1,17 @@
+@media only screen and (max-width: 32.5rem){
+    header{
+        width:100%;
+        flex-direction: column;
+        background-color:var(--header-color);
+        background: linear-gradient(var(--header-color), white);
+    }
+    #mobile_switch{
+        width:100%;
+    }
+    #mobile_switch img{
+        display:block;
+        height:1.6rem;
+        float:left;
+        padding:0.6rem;
+    }
+}

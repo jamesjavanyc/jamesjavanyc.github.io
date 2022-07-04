@@ -1,0 +1,28 @@
+@import url(./flex_nav/flex_nav.css);
+@import url(./small.css);
+@import url(./medium.css);
+@import url(./large.css);
+header{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin:0;
+    font-family:var(--title-font);
+    border-bottom: 5px solid gray;
+}
+
+#title_bar{
+    display:flex;
+    height: 4rem;
+    align-items: center;
+    gap:2rem; 
+    padding:2.5rem;
+}
+#title_bar img{
+    height: 100%;
+}
+h1{
+    display:inline-block;
+    font-size:2.5rem;
+}
