@@ -49,7 +49,7 @@ const setCurrentData = (dataSet)=>{
     }else{
         windchill = '0';
     }
-    weather.children[2].children[2].innerText = windchill != '0'? weather.children[2].children[2].innerText = Math.round(windchill) + ' ℉':weather.children[3].children[2].innerText = 'N/A';
+    weather.children[2].children[2].innerText = windchill != '0'? weather.children[2].children[2].innerText = Math.round(windchill) + ' ℉':weather.children[2].children[2].innerText = 'N/A';
 }
 
 const setWeatherData = async()=>{
