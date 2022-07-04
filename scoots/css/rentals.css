@@ -12,6 +12,61 @@
 html, body {
     height:100%;
 }
+
+.motor{
+    display:flex;
+    flex-direction: column;
+}
+.motor img{
+    max-width: 450px;
+    object-fit:cover;
+    width:50%;
+}
+.motor p{
+    text-align: center;
+    background-color: var(--header-color);
+    padding:1rem;
+    font-family:var(--title-font);
+    font-weight:bold;
+}
+.img_info{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin:0 auto 2rem;
+    align-items:center;
+}
+.motor_info{
+    list-style-type:none;
+    padding:1rem;
+    font-family:var(--title-font);
+    margin-left: 7%;
+}
+.motor_info div{
+    display:inline-block;
+}
+.delemeter{
+    font-size:1.5rem;
+    margin: 0.6rem 0 0.2rem;
+    font-family:var(--title-font);
+    border-bottom: 1px solid black;
+    width: 15rem;
+}
+.info{
+    font-size:1.1rem;
+    margin: 0.2rem 0 ;
+    font-weight: bold;
+    font-family:var(--content-font);
+}
+.info span{
+    margin-right:1rem;
+}
+
+
+
+
+
 h3{
     font-family:var(--header-font);
     font-size: 2rem;
