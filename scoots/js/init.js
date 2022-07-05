@@ -3,7 +3,6 @@ import {nav_switch} from './header.js'
 import {setLastUpdate} from './footer.js'
 import {setWeatherData} from './set_weather_data.js'
 import { fill_motor } from './fill_rentals.js';
-import {} from './reservation.js'
 
 let initdata = new Array();
 initdata.push(nav_switch);
