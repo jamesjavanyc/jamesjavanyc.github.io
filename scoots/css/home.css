@@ -61,10 +61,10 @@ h4{
     font-weight:bold;
 }
 .ws_i{
-    max-width: 360px;
+    max-width: 260px;
     vertical-align: top;
-    margin: 0 auto;
-    background-color: beige;
+    margin: 0.5rem auto;
+    /* background-color: beige; */
     padding: 0.3rem;
 }
 .ws_k{
@@ -97,7 +97,7 @@ h4{
     flex-wrap: nowrap;
     width:99%;
     margin:0 auto;
-    max-width:960px;
+    max-width:600px;
     border:1px solid black;
     border-right: 0;
 }
@@ -109,7 +109,7 @@ h4{
     border-right:1px solid black;
 }
 .day{
-    background-color:rgb(127,171,140);
+    background-color:var(--header-color);
 }
 .day p{
     text-align: center;

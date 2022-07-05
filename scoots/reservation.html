@@ -57,14 +57,17 @@
             </fieldset>
             <fieldset>
                 <legend>Service Information</legend>
-                <label for="startdate">When to start?<input type="date" id="startdate"></label>
-                <label for="period">How many days?<input type="text" id="period"></label>
+                <label for="startdate">When to start?<input type="date" name="time" id="startdate" required></label>
+                <label for="period">How many days?<input type="text" id="period" required></label>
                 <label for="type">Pick your scoot
-                    <select name="types" id="type">
+                    <select name="types" id="type" required>
                         <option value="" disabled="disabled" selected="selected">select scoots</option>
-                        <option value="Preston">Preston</option>
-                        <option value="SodaSpring">Soda Spring</option>
-                        <option value="FishHeaven">Fish Heaven</option>
+                        <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                        <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                        <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler—4 door with a/c">Jeep Wrangler—4 door with a/c</option>
+                        <option value="Jeep Wrangler—2 door">Jeep Wrangler—2 door</option>
                     </select>
                 </label>
                 <label for="amount">Amount<input type="text" id="amount" required value="1"></label>
