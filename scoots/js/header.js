@@ -8,20 +8,20 @@ const nav_switch = ()=>{
 
 const click_menu = ()=>{
     let nav = header.children[2];
-    if(nav.getAttribute('data-open') == '0'){
+    if(mobile_switch.getAttribute('data-open') == '0'){
         // open menu
         Array.from(nav.children[0].children).forEach((li)=>{
             li.setAttribute('style','display:block;');
         })
         mobile_switch.children[0].src = './source/menu-close.png'
-        nav.setAttribute('data-open', '1');
+        mobile_switch.setAttribute('data-open', '1');
     }else{
         // close menu
         Array.from(nav.children[0].children).forEach((li)=>{
             li.setAttribute('style','display:none;');
         })
         mobile_switch.children[0].src = './source/menu-icon.png'
-        nav.setAttribute('data-open', '0');
+        mobile_switch.setAttribute('data-open', '0');
     }
     // console.log('finish');
 }

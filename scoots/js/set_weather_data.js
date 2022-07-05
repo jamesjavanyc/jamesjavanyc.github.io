@@ -4,23 +4,26 @@ let src_url = 'http://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=
 let weathers = main.children[3];
 
 const getWeatherData = async()=>{
+    let dataSet;
     try{
-        let dataSet =await (await fetch(src_url)).json();
+        dataSet =await (await fetch(src_url)).json();
     }catch(error){
         throw error;
     }
     dataSet = dataSet.list;
+    // console.table(dataSet)
     return dataSet;
 }
 
 const setForecast = (dataSet)=>{
     let forecast_sum = weathers.children[2].children[1];
     // console.log(forecast_sum)
-    let cur = new Date().getDay() + 1;
+    let date = new Date();
+    let cur = date.getDay() + 1;
     let day = 0;
     let pre_date = dataSet[0].dt_txt.substring(0,10);
-    for (let i = 1; i < dataSet.length; i++ ){
-        if(dataSet[i].dt_txt.substring(0,10) != pre_date){
+    for (let i = 0; i < dataSet.length; i++ ){
+        if(dataSet[i].dt_txt.substring(0,10) != pre_date || (date.getDate()!= dataSet[0].dt_txt.substr(8,2) && day == 0)){
             forecast_sum.children[day].children[0].children[0].innerText
                 = getStrDay((cur + day)%7);
             forecast_sum.children[day].children[1].children[0].src
@@ -59,11 +62,11 @@ const setCurrentData = (dataSet)=>{
 const setWeatherData = async()=>{
     try{
         let dataSet = await getWeatherData();
+        setCurrentData(dataSet);
+        setForecast(dataSet);
     }catch(error){
         console.error(error);
     }
-    setCurrentData(dataSet);
-    setForecast(dataSet);
 }
 
 const getStrDay = (num)=>{

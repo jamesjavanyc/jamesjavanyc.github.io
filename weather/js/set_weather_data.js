@@ -16,13 +16,14 @@ const getWeatherData = async()=>{
 
 const setForecast = (dataSet)=>{
     let forecast_sum = main.children[2].children[1];
-    let cur = new Date().getDay() + 1;
+    let date = new Date();
+    let cur = date.getDay() + 1;
     // two pointer
     let day = 0;
     let pre_date = dataSet[0].dt_txt.substring(0,10);
     // console.log(pre_date)
     for (let i = 1; i < dataSet.length; i++ ){
-        if(dataSet[i].dt_txt.substring(0,10) != pre_date){
+        if(dataSet[i].dt_txt.substring(0,10) != pre_date || (date.getDate()!= dataSet[0].dt_txt.substr(8,2) && day == 0)){
             //match date
             forecast_sum.children[day].children[0].children[0].innerText
                 = getStrDay((cur + day)%7);
