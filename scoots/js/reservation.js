@@ -1,4 +1,4 @@
-import {main} from './init_dom.js'
+import {main, footer} from './init_dom.js'
 let [information, form,thankyou] = main.children;
 
 
@@ -30,6 +30,7 @@ const confirm_condition = ()=>{
 const submit_form = (event)=>{
     event.preventDefault();
     open_next();
+    footer.setAttribute('style', 'position:fixed; bottom:0;')
 }
 
 

@@ -11,7 +11,7 @@ h3{
 }
 #thankyou{
     display:none;
-    height:40vh;
+    height:100%;
 }
 ul{
     margin: 0 auto;
@@ -28,6 +28,9 @@ main li{
     margin:2.5rem auto 1rem;
     font-size: 1.1rem;
     text-align:center;
+}
+#submit_btn {
+    height:5.5rem;
 }
 button, #submit_btn input{
     display:block;
