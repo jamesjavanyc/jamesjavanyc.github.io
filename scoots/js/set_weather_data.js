@@ -4,7 +4,11 @@ let src_url = 'http://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=
 let weathers = main.children[3];
 
 const getWeatherData = async()=>{
-    let dataSet =await (await fetch(src_url)).json();
+    try{
+        let dataSet =await (await fetch(src_url)).json();
+    }catch(error){
+        throw error;
+    }
     dataSet = dataSet.list;
     return dataSet;
 }
@@ -53,7 +57,11 @@ const setCurrentData = (dataSet)=>{
 }
 
 const setWeatherData = async()=>{
-    let dataSet = await getWeatherData();
+    try{
+        let dataSet = await getWeatherData();
+    }catch(error){
+        console.error(error);
+    }
     setCurrentData(dataSet);
     setForecast(dataSet);
 }
