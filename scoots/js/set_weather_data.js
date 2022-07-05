@@ -55,7 +55,7 @@ const setCurrentData = (dataSet)=>{
 const setWeatherData = async()=>{
     let dataSet = await getWeatherData();
     setCurrentData(dataSet);
-    setForecast(dataSet)
+    setForecast(dataSet);
 }
 
 const getStrDay = (num)=>{

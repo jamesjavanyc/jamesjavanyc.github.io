@@ -23,7 +23,7 @@ const click_menu = ()=>{
         mobile_switch.children[0].src = './source/menu-icon.png'
         nav.setAttribute('data-open', '0');
     }
-    console.log('finish');
+    // console.log('finish');
 }
 
 export {nav_switch}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots!</title>
+    <link rel="stylesheet" type="text/css" href="./css/reservation.css">
+</head>
+<body>
+    <header>
+        <div id="title_bar">
+            <img src="./source/logo.jpg" alt="logo">
+            <h1>Scoots</h1>
+        </div>
+        <div id="mobile_switch" data-open="0">
+            <img src="./source/menu-icon.png" alt="menu">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="agreement">
+            <h3>Information and Services</h3>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+            <label id="start_check"><input type="checkbox" > I have read the Information and Service, agreed and confirm making a reservation.</label>
+            <button id="start_btn" type="button">Start Reservation!</button>
+        </section>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name *<input type="text" id="name" required></label>
+                <label for="phone">Phone *<input type="tel" id="phone" required></label>
+                <label for="email">Email *<input type="email" id="email" required></label>
+                <label for="region">Region *<input type="text" id="region" required></label>
+                <label class="add_info_ck"><input id="curise" type="checkbox" value="curise">Take curise?</label>
+                <label for="cruiseline" id="curisebox">Curise <input type="text" id="cruiseline"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Service Information</legend>
+                <label for="startdate">When to start?<input type="date" id="startdate"></label>
+                <label for="period">How many days?<input type="text" id="period"></label>
+                <label for="type">Pick your scoot
+                    <select name="" id="type">
+                        <option value="" disabled="disabled" selected="selected">select scoots</option>
+                        <option value="Preston">Preston</option>
+                        <option value="SodaSpring">Soda Spring</option>
+                        <option value="FishHeaven">Fish Heaven</option>
+                    </select>
+                </label>
+                <label for="amount">Amount<input type="text" id="amount" required value="1"></label>
+            </fieldset>
+            <label id="submit_btn"><input type="submit" value="Confirm Reservation" ></label>
+        </form>
+        <section id="thankyou">
+            <h3>Thank you for your reservation!</h3>
+        </section>
+    </main>
+    <footer>
+        <p class="last_update"></p>
+    </footer>
+    <script type="module" src="./js/init.js"></script> 
+</body>
+</html>
