@@ -17,11 +17,11 @@ if(page_nav_id == 1 ){
 
 }
 
-console.log("start initializing")
+// console.log("start initializing")
 initdata.forEach(function async(callback){
-    console.log("initializing")
+    // console.log("initializing")
     callback();
     // console.log(callback);
 });
-console.log("end initializing")
+// console.log("end initializing")
 
