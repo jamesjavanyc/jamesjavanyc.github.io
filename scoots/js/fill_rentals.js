@@ -4,6 +4,7 @@ const fill_motor = async()=>{
         let datasetPromise = fetch('https://jamesjavanyc.github.io/scoots/data/price.json');
         let dataset = await datasetPromise;
         dataset = await dataset.json();
+        console.table(dataset)
         let i = 0;
         motors.forEach((motor)=>{
             motor.children[0].innerText = dataset[i].name;
