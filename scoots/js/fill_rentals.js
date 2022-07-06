@@ -15,6 +15,7 @@ const fill_motor = async()=>{
             ul.children[5].children[1].children[0].innerHTML = dataset[i].whalf;
             ul.children[6].children[1].children[0].innerHTML = dataset[i].wfull;
             i++;
+            console.log(i +" src dynamic band done")
         })
     }catch(error){
         console.err(error);
