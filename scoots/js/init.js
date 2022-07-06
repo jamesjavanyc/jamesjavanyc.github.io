@@ -21,7 +21,6 @@ if(page_nav_id == 1 ){
 initdata.forEach(function async(callback){
     // console.log("initializing")
     callback();
-    // console.log(callback);
 });
 // console.log("end initializing")
 
