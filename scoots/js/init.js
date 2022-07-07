@@ -20,7 +20,14 @@ if(page_nav_id == 1 ){
 // console.log("start initializing")
 initdata.forEach(function async(callback){
     // console.log("initializing")
-    callback();
+    let res = callback();
+    if(typeof(res)==='object'){
+        res.then(()=>{
+            console.log('fetched')
+        },()=>{
+            console.log('failed')
+        })
+    };
 });
 // console.log("end initializing")
 

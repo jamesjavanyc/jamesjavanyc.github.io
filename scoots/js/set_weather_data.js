@@ -3,9 +3,11 @@ import {main} from './init_dom.js'
 let src_url = 'http://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=f79199b4c26b59deed0f6f9aa899412e';
 let weathers = main.children[3];
 
+
 const getWeatherData = async()=>{
     let dataSet;
     try{
+        console.log('start fetch')
         dataSet =await (await fetch(src_url)).json();
     }catch(error){
         throw error;
