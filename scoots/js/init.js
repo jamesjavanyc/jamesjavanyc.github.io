@@ -18,19 +18,9 @@ if(page_nav_id == 1 ){
 }
 
 // console.log("start initializing")
-initdata.forEach(function async(callback){
+initdata.forEach(function (callback){
     // console.log("initializing")
-    let res = callback();
-    if(typeof(res)==='object'){
-        callback().then(()=>{
-
-        },()=>{
-            console.log('failed')
-            callback().then(() =>{
-                console.log('second fetch')
-            });
-        })
-    };
+    callback();
 });
 // console.log("end initializing")
 
