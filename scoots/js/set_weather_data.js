@@ -69,6 +69,8 @@ const setWeatherData = async()=>{
         setForecast(dataSet);
     }catch(error){
         console.error(error);
+    }finally {
+        return 1;
     }
 }
 
