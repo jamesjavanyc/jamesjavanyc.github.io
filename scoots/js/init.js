@@ -18,9 +18,9 @@ if(page_nav_id == 1 ){
 }
 
 // console.log("start initializing")
-initdata.forEach(function (callback){
+initdata.forEach(async function(callback){
     // console.log("initializing")
-    callback();
+    await callback();
 });
 // console.log("end initializing")
 

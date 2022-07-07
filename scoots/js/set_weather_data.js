@@ -65,8 +65,7 @@ const setCurrentData = (dataSet)=>{
 const setWeatherData = async()=>{
     try{
         let dataSet = await getWeatherData();
-        setTimeout(setCurrentData(dataSet),2000);
-        // setCurrentData(dataSet);
+        setCurrentData(dataSet);
         setForecast(dataSet);
     }catch(error){
         console.error(error);
