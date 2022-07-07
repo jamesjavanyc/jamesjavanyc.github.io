@@ -23,7 +23,7 @@ if(page_nav_id == 1 ){
 initdata.forEach(async function(callback){
     // console.log(callback)
     let res = await callback();
-    // console.log(res)
+    console.log(res)
 });
 // console.log("end initializing")
 

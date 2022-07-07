@@ -70,6 +70,7 @@ const setWeatherData = async()=>{
     }catch(error){
         console.error(error);
     }
+    return Promise.resolve(1);
 }
 
 const getStrDay = (num)=>{
