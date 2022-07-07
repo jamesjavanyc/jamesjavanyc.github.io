@@ -21,6 +21,7 @@ if(page_nav_id == 1 ){
 initdata.forEach(function async(callback){
     // console.log("initializing")
     let res = callback();
+    console.log('call back called')
     if(typeof(res)==='object'){
         res.then(()=>{
             console.log('fetched')
