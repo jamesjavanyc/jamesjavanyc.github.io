@@ -23,7 +23,6 @@ initdata.forEach(function async(callback){
     let res = callback();
     if(typeof(res)==='object'){
         callback().then(()=>{
-            return 0;
         },()=>{
             console.log('failed')
             callback().then(() =>{
