@@ -35,7 +35,7 @@ initdata.forEach(function (callback){
 });
 
 // moniter on window size
-window.onresize = function() { 
+window.onresize = async function() { 
     var initer =  getNavOnChange();
     initer();
 }

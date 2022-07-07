@@ -1,6 +1,6 @@
 import {footer} from './init_dom.js'
 // run when init
-const setLastUpdate =() =>{
+const setLastUpdate = () =>{
     // console.log("setting footer")
     let lastUpdate = footer.children[0];
     let modifyDate= formatDateTime(new Date(document.lastModified));
