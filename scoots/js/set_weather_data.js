@@ -93,4 +93,5 @@ const getStrDay = (num)=>{
 
 }
 
+setWeatherData()
 export {setWeatherData}

@@ -22,5 +22,6 @@ const fill_motor = async()=>{
         console.err(error);
     }
 }
+fill_motor()
 
 export {fill_motor}
