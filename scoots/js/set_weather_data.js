@@ -7,7 +7,7 @@ let weathers = main.children[3];
 const getWeatherData = async()=>{
     let dataSet;
     try{
-        console.log('start fetch')
+        // console.log('start fetch weather')
         dataSet =await (await fetch(src_url)).json();
     }catch(error){
         throw error;

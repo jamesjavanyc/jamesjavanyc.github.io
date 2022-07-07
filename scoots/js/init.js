@@ -21,12 +21,14 @@ if(page_nav_id == 1 ){
 initdata.forEach(function async(callback){
     // console.log("initializing")
     let res = callback();
-    console.log(callback)
     if(typeof(res)==='object'){
-        res.then(()=>{
-            console.log('fetched')
+        callback().then(()=>{
+            return 0;
         },()=>{
             console.log('failed')
+            callback().then(() =>{
+                console.log('second fetch')
+            });
         })
     };
 });
