@@ -1,6 +1,7 @@
 let motors = Array.from(document.getElementsByClassName('motor'));
 const fill_motor = async()=>{
     try{
+        console.log('start fetch')
         let datasetPromise = fetch('https://jamesjavanyc.github.io/scoots/data/price.json');
         let dataset = await datasetPromise;
         dataset = await dataset.json();

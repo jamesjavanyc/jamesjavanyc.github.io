@@ -4,6 +4,7 @@ let src_url = 'http://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=
 let weathers = main.children[3];
 
 const getWeatherData = async()=>{
+    console.log('start fetch')
     let dataSet;
     try{
         dataSet =await (await fetch(src_url)).json();
