@@ -29,8 +29,8 @@ if(page_nav_id == 2 ||page_nav_id == 3||page_nav_id == 4 ){
 }
 
 
-initdata.forEach(function (callback){
-    callback();
+initdata.forEach(async function (callback){
+    await callback();
     // console.log(callback);
 });
 
