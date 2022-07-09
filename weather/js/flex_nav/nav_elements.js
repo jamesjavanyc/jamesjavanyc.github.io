@@ -30,7 +30,7 @@ const nav_elements_initer = ()=>{
         }, 
         getInstance:function(){
             if(!this.instance) {
-                this.instance = nav_elements.init();
+                this.instance = this.init();
             }
             return this.instance;
         }
