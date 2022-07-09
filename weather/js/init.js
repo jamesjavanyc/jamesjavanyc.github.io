@@ -44,7 +44,7 @@ const init_js = ()=>{
     }
 }
 
-window.addEventListener('DOMContentLoaded', init_js)
+document.addEventListener('DOMContentLoaded', init_js)
 
 export {init_js}
 
