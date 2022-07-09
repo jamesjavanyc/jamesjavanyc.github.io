@@ -30,7 +30,11 @@ if(page_nav_id == 2 ||page_nav_id == 3||page_nav_id == 4 ){
 
 
 initdata.forEach(async function (callback){
-    await callback();
+    try{
+        await callback();
+    }catch(e){
+        console.error(e);
+    }
     // console.log(callback);
 });
 
