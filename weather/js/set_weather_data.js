@@ -35,6 +35,9 @@ const setForecast = (dataSet)=>{
             pre_date = dataSet[i].dt_txt.substring(0,10);
             day++;
         }
+        if(day>4){
+            break;
+        }
     }
 }
 const setCurrentData = (dataSet)=>{
