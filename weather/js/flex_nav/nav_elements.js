@@ -24,7 +24,7 @@ const nav_elements_initer = ()=>{
                     this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
                 }
             }catch(e){
-                console.log("undefined child")
+                console.error("undefined child")
             }
             this.mb_switch_icon= this.mb_switch.childNodes[1];
             // console.log(this.mb_switch)

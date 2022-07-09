@@ -11,7 +11,7 @@ while(!(typeof(page_nav_id) == 'number')){
         page_nav_id = parseInt(getComputedStyle(header).getPropertyValue('--page-id').trim());
         // console.log('get ID');
     }catch(e){
-        console.err(e)
+        console.error(e)
     }
 }
 
