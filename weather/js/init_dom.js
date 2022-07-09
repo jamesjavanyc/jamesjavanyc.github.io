@@ -10,7 +10,7 @@ let page_nav_id;
 while(typeof(page_nav_id) != 'number'){
     page_nav_id = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim());
 }
-// console.log(page_nav_id)
+console.log(page_nav_id)
 
 export {body,header, banner, main, page_nav_id};
 
