@@ -28,15 +28,22 @@ const init_js = ()=>{
         // console.log(1)
     }
     
-    
-    initdata.forEach(async function (callback){
+    for (const callback of initdata) {
         try{
             await callback();
         }catch(e){
             console.error(e);
         }
-        // console.log(callback);
-    });
+    }
+    
+    // initdata.forEach(async function (callback){
+    //     try{
+    //         await callback();
+    //     }catch(e){
+    //         console.error(e);
+    //     }
+    //     // console.log(callback);
+    // });
     // moniter on window size
     window.onresize = async function() { 
         var initer =  getNavOnChange();
