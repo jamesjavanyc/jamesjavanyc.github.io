@@ -1,5 +1,4 @@
-import {header} from '../init_dom.js'
-import { page_nav_id } from '../init_dom.js';
+import {header, page_nav_id} from '../init_dom.js'
 // singleton of nav bar object
 const nav_elements_initer = ()=>{
     // init the object
@@ -17,8 +16,8 @@ const nav_elements_initer = ()=>{
             // if (window.innerWidth>1160){
             //     nav_elements.lp_switch.children[0].setAttribute('style', 'display:none;');
             // }
-            console.log(page_nav_id)
-            console.log(this.nav_list.children[page_nav_id-1].children[0])
+            // console.log(page_nav_id)
+            // console.log(this.nav_list.children[page_nav_id-1].children[0])
             this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
             this.mb_switch_icon= this.mb_switch.childNodes[1];
             // console.log(this.mb_switch)

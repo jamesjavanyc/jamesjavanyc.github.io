@@ -42,7 +42,7 @@ laptopNavSwitch.getInstance = function(){
 }
 
 const init = () =>{
-    console.log('lp')
+    // console.log('lp')
     // init basic function
     laptopNavSwitch();
     add_listener();

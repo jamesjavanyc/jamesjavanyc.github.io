@@ -37,7 +37,7 @@ mobileNavSwitch.getInstance = function(){
 }
 
 const init = ()=>{
-    console.log('mb')
+    // console.log('mb')
     // init basic function
     mobileNavSwitch();
     add_listener();
