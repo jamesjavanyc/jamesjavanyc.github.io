@@ -30,7 +30,7 @@ const nav_elements_initer = ()=>{
             // console.log(this.mb_switch)
             this.mb_switch_title= this.mb_switch.childNodes[2];
             this.mb_switch_title = this.mb_switch.children[this.mb_switch.children.length-1];
-            this.mb_isOpen= true;
+            this.mb_isOpen= false;
             this.lp_isOpen= true;
             return this;
         }, 
