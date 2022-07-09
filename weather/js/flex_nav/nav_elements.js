@@ -17,7 +17,7 @@ const nav_elements_initer = ()=>{
             // if (window.innerWidth>1160){
             //     nav_elements.lp_switch.children[0].setAttribute('style', 'display:none;');
             // }
-            console.log(this.nav_list.children[page_nav_id-1])
+            console.log(this.nav_list)
             console.log(this.nav_list.children[page_nav_id-1].children[0])
             this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
             this.mb_switch_icon= this.mb_switch.childNodes[1];
