@@ -5,7 +5,7 @@ import {setBanner} from './header.js'
 import {page_nav_id} from './init_dom.js'
 import {lazyloadImage} from './lazyload.js'
 import {setCityWeather} from './homepage_city_weather.js'
-// import {setWeatherData} from './set_weather_data.js'
+import {setWeatherData} from './set_weather_data.js'
 import {setEvent} from './set_event.js'
 
 const init_js = ()=>{
