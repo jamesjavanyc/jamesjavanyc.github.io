@@ -6,9 +6,10 @@ let main = body.children[2];
 
 
 let page_nav_id;
-// console.log(typeof(page_nav_id) != 'number')
+console.log(Object.is(page_nav_id, NaN))
 while(typeof(page_nav_id) != 'number'){
     page_nav_id = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim());
+    console.log('get ID')
 }
 console.log(page_nav_id)
 
