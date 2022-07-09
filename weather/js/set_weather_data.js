@@ -6,7 +6,9 @@ let area_id = weather_id_dict[page_nav_id];
 let src_url = 'http://api.openweathermap.org/data/2.5/forecast?id='+ area_id+'&appid=f79199b4c26b59deed0f6f9aa899412e';
 
 const getWeatherData = async()=>{
+    console.log('start fetch weather')
     let dataSet =await (await fetch(src_url)).json();
+    console.log('fetched weather')
     // console.log("get data from api done!")
     // console.table(dataSet.list)
     dataSet = dataSet.list;
