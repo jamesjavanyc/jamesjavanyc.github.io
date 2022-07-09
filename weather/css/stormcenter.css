@@ -25,7 +25,8 @@
 
     --title-color: rgb(8,32,49);
     --nav-color:rgb(52,73,87);
-
+}
+header{
     --page-id: 5;
 }
 html, body {

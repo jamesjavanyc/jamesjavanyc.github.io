@@ -24,9 +24,12 @@
     --title-color: rgb(8,32,49);
     --nav-color:rgb(52,73,87);
 
-    --page-id: 2;
+    /* --page-id: 2; */
 }
 html, body {
     height:100%;
+}
+header{
+    --page-id: 2;
 }
 /* ------------------------------------------main------------ */

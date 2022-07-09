@@ -6,12 +6,10 @@ let main = body.children[2];
 
 
 let page_nav_id;
-console.log(Object.is(page_nav_id, NaN))
 while(!(typeof(page_nav_id) == 'number')){
-    page_nav_id = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim());
-    console.log('get ID');
+    page_nav_id = parseInt(getComputedStyle(header).getPropertyValue('--page-id').trim());
+    // console.log('get ID');
 }
-console.log(page_nav_id)
 
 export {body,header, banner, main, page_nav_id};
 
