@@ -6,7 +6,7 @@ let main = body.children[2];
 
 
 let page_nav_id;
-while(!(typeof(page_nav_id) == 'number')){
+while(!(page_nav_id in [1,2,3,4,5,6])){
     try{
         page_nav_id = parseInt(getComputedStyle(header).getPropertyValue('--page-id').trim());
         // console.log('get ID');
