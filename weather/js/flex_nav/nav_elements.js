@@ -18,8 +18,8 @@ const nav_elements_initer = ()=>{
             // }
             // console.log(page_nav_id)
             // console.log(this.nav_list.children[page_nav_id-1].children[0])
-            if (typeof(page_nav_id)=='number'){
-                console.log(page_nav_id)
+            if (typeof(page_nav_id)=='number' && !Object.is(page_nav_id,NaN)){
+                console.log(Object.is(page_nav_id,NaN))
                 this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
             }
             this.mb_switch_icon= this.mb_switch.childNodes[1];
