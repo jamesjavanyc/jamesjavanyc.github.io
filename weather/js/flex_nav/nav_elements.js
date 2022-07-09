@@ -20,7 +20,7 @@ const nav_elements_initer = ()=>{
             // console.log(this.nav_list.children[page_nav_id-1].children[0])
             try{
                 if (typeof(page_nav_id)=='number' && !Object.is(page_nav_id,NaN)){
-                    console.log(Object.is(page_nav_id,NaN))
+                    // console.log(Object.is(page_nav_id,NaN))
                     this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
                 }
             }catch(e){

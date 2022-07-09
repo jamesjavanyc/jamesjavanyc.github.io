@@ -29,7 +29,11 @@ const init_js = () => {
     }
     async function init(initdata){
         for(let i = 0; i < initdata.length; i++){
-            await initdata[i]();
+            try{
+                await initdata[i]();
+            }catch(e){
+                console.error(e);
+            }
         }
     }
     init(initdata);
