@@ -15,7 +15,7 @@ const init_js = ()=>{
         // console.log(2)
         initdata.push(setCurrentDate);
         initdata.push(setBanner);
-        // initdata.push(setWeatherData);
+        initdata.push(setWeatherData);
         initdata.push(setEvent);
     }else if(page_nav_id == 5){
         // console.log(5)
