@@ -81,6 +81,6 @@ const getStrDay = (num)=>{
 
 }
 
-document.addEventListener('DOMContentLoaded', setWeatherData)
+// document.addEventListener('DOMContentLoaded', setWeatherData)
 
 export {setWeatherData}
