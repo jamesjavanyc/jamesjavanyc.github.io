@@ -3,7 +3,7 @@ import { mobileNavSwitch } from "./mobile.js"
 
 function getNavOnChange(){
     let nav_exp;
-    console.log(window.innerWidth)
+    // console.log(window.innerWidth)
     if (window.innerWidth <= 536){
         // console.log(1)
         nav_exp = mobileNavSwitch.getInstance();

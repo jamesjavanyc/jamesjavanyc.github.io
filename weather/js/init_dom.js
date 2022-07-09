@@ -7,8 +7,12 @@ let main = body.children[2];
 
 let page_nav_id;
 while(!(typeof(page_nav_id) == 'number')){
-    page_nav_id = parseInt(getComputedStyle(header).getPropertyValue('--page-id').trim());
-    // console.log('get ID');
+    try{
+        page_nav_id = parseInt(getComputedStyle(header).getPropertyValue('--page-id').trim());
+        // console.log('get ID');
+    }catch(e){
+        console.err(e)
+    }
 }
 
 export {body,header, banner, main, page_nav_id};
