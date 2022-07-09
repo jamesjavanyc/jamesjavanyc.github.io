@@ -6,13 +6,13 @@
     --content-font:Roboto;
 
     --header-color: rgb(222,225,230);
-
-    --page-id: 2;
 }
 html, body {
     height:100%;
 }
-
+header{
+    --page-id: 2;
+}
 .motor{
     display:flex;
     flex-direction: column;

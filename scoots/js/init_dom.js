@@ -4,7 +4,7 @@ let main = body.children[1];
 let footer = body.children[2];
 
 
-let page_nav_id = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--page-id').trim());
+let page_nav_id = parseInt(getComputedStyle(header).getPropertyValue('--page-id').trim());
 // console.log(footer);
 // console.log(page_nav_id);
 

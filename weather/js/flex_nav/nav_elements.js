@@ -18,7 +18,9 @@ const nav_elements_initer = ()=>{
             // }
             // console.log(page_nav_id)
             // console.log(this.nav_list.children[page_nav_id-1].children[0])
-            this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
+            if (typeof(page_nav_id)=='number'){
+                this.nav_list.children[page_nav_id-1].children[0].setAttribute('style','color:yellow;');
+            }
             this.mb_switch_icon= this.mb_switch.childNodes[1];
             // console.log(this.mb_switch)
             this.mb_switch_title= this.mb_switch.childNodes[2];
