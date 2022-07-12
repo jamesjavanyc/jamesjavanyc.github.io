@@ -6,7 +6,7 @@ const setEvent = async()=>{
     // console.log('start fetch event')
     let dataSet = await fetch(src_url);
     dataSet = await dataSet.json();
-    console.log('fetched event')
+    //console.log('fetched event')
     let towns = dataSet['towns'];
     // console.log(towns)
     let events = main.children[3].children[1];
